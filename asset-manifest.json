@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/funbox-test-work/static/css/main.6c71825a.css",
+    "main.css": "/funbox-test-work/static/css/main.eda764c6.css",
     "main.js": "/funbox-test-work/static/js/main.bb57a7cb.js",
     "static/js/787.cefd729d.chunk.js": "/funbox-test-work/static/js/787.cefd729d.chunk.js",
     "static/media/cat.svg": "/funbox-test-work/static/media/cat.98cab68fb7bd92244bb2.svg",
     "static/media/Exo2.0-Thin.otf": "/funbox-test-work/static/media/Exo2.0-Thin.51c257bfa8ec3e0cfb4b.otf",
     "static/media/bg.svg": "/funbox-test-work/static/media/bg.d26570ecd3a3a15040a1.svg",
     "index.html": "/funbox-test-work/index.html",
-    "main.6c71825a.css.map": "/funbox-test-work/static/css/main.6c71825a.css.map",
+    "main.eda764c6.css.map": "/funbox-test-work/static/css/main.eda764c6.css.map",
     "main.bb57a7cb.js.map": "/funbox-test-work/static/js/main.bb57a7cb.js.map",
     "787.cefd729d.chunk.js.map": "/funbox-test-work/static/js/787.cefd729d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c71825a.css",
+    "static/css/main.eda764c6.css",
     "static/js/main.bb57a7cb.js"
   ]
 }
