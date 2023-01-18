@@ -3,6 +3,7 @@
 ## Ссылки
 
 [Готовый проект](https://k3499.github.io/funbox-test-work/)
+
 [Задание](https://dl.funbox.ru/qt-html-css-js.zip)
 
 ## Теоретическое задание
