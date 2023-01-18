@@ -1,7 +1,8 @@
 .treat__block {
+  margin: 0;
   background: #f2f2f2;
-  border-right: 4px solid #2ea8e6;
-  border-bottom: 4px solid #2ea8e6;
+  border-right: 4px solid #1698d9;
+  border-bottom: 4px solid #1698d9;
   border-radius: 12px;
   box-sizing: border-box;
   width: 320px;
@@ -9,6 +10,11 @@
   position: relative;
   background: linear-gradient(135deg, transparent 29px, #f2f2f2 0);
 }
+.treat__block:hover {
+  border-right: 4px solid #2ea8e6;
+  border-bottom: 4px solid #2ea8e6;
+}
+
 .treat__block:after {
   content: "";
   position: absolute;
@@ -17,18 +23,25 @@
   width: 0;
   height: 44px;
   transform: skew(-45deg);
+  border-left: 4px solid #1698d9;
+}
+.treat__block:hover .treat__block:after {
   border-left: 4px solid #2ea8e6;
 }
 .treat__head-block {
   padding-left: 8px;
   position: absolute;
   background: #f2f2f2;
-  border-top: 4px solid #2ea8e6;
-  border-right: 4px solid #2ea8e6;
+  border-top: 4px solid #1698d9;
+  border-right: 4px solid #1698d9;
   left: 40px;
   width: 268px;
   height: 40px;
   border-radius: 0 12px 0 0;
+}
+.treat__block:hover .treat__head-block {
+  border-top: 4px solid #2ea8e6;
+  border-right: 4px solid #2ea8e6;
 }
 .treat__body-block {
   box-sizing: border-box;
@@ -39,10 +52,15 @@
   left: -4px;
   height: 436px;
   width: 324px;
+  border-bottom: 4px solid #1698d9;
+  border-left: 4px solid #1698d9;
+  border-right: 4px solid #1698d9;
+  border-radius: 0 0 12px 12px;
+}
+.treat__block:hover .treat__body-block {
   border-bottom: 4px solid #2ea8e6;
   border-left: 4px solid #2ea8e6;
   border-right: 4px solid #2ea8e6;
-  border-radius: 0 0 12px 12px;
 }
 .treat__category {
   font-family: "Trebuchet MS";
@@ -93,10 +111,13 @@
   position: absolute;
   width: 80px;
   height: 80px;
-  background: #2ea8e6;
+  background: #1698d9;
   right: 16px;
   bottom: 16px;
   border-radius: 45px;
+}
+.treat__block:hover .treat__weight-circle {
+  background: #2ea8e6;
 }
 .treat__weight {
   font-family: "Trebuchet MS";
@@ -137,5 +158,103 @@
   text-align: center;
   color: #22a7e9;
   text-decoration: none;
+  border-bottom: 1px dashed #1698d9;
+}
+.treat__block:hover .treat__call-link {
   border-bottom: 1px dashed #2ea8e6;
+}
+@media (min-width: 1025px) {
+  .treat__block {
+    margin: 0 20px;
+  }
+}
+@media (min-width: 480px) {
+  .treat__block {
+    margin: 0 15px;
+  }
+}
+
+/*selected*/
+
+.selected {
+  border-right: 4px solid #d91667;
+  border-bottom: 4px solid #d91667;
+}
+.selected:hover {
+  border-right: 4px solid #e52e7a;
+  border-bottom: 4px solid #e52e7a;
+}
+.selected:after {
+  border-left: 4px solid #d91667;
+}
+.selected:hover .selected:after {
+  border-left: 4px solid #e52e7a;
+}
+.selected .treat__head-block {
+  border-top: 4px solid #d91667;
+  border-right: 4px solid #d91667;
+}
+.selected:hover .treat__head-block {
+  border-top: 4px solid #e52e7a;
+  border-right: 4px solid #e52e7a;
+}
+.selected .treat__body-block {
+  border-bottom: 4px solid #d91667;
+  border-left: 4px solid #d91667;
+  border-right: 4px solid #d91667;
+}
+.selected:hover .treat__body-block {
+  border-bottom: 4px solid #e52e7a;
+  border-left: 4px solid #e52e7a;
+  border-right: 4px solid #e52e7a;
+}
+.selected .treat__weight-circle {
+  background: #d91667;
+}
+.selected:hover .treat__weight-circle {
+  background: #e52e7a;
+}
+.treat__category-selected {
+  color: #e62e7a;
+}
+
+/*disabled*/
+.treat__call-disabled {
+  color: #ffff66;
+}
+.disabled {
+  pointer-events: none;
+  border-right: 4px solid #b3b3b3;
+  border-bottom: 4px solid #b3b3b3;
+}
+.disabled:after {
+  pointer-events: none;
+  border-left: 4px solid #b3b3b3;
+}
+.disabled .treat__head-block {
+  pointer-events: none;
+  border-top: 4px solid #b3b3b3;
+  border-right: 4px solid #b3b3b3;
+}
+.disabled .treat__body-block {
+  pointer-events: none;
+  border-bottom: 4px solid #b3b3b3;
+  border-left: 4px solid #b3b3b3;
+  border-right: 4px solid #b3b3b3;
+}
+.disabled .treat__weight-circle {
+  pointer-events: none;
+  background: #b3b3b3;
+}
+.disabled .treat__head-block .treat__category,
+.disabled .treat__body-block .treat__title,
+.disabled .treat__body-block .treat__subtitle,
+.disabled .treat__body-block .treat__features {
+  color: #b3b3b3;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.disabled .treat__body-block .treat__cat {
+  mix-blend-mode: normal;
+  opacity: 0.5;
 }
