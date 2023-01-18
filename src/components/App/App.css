@@ -6,7 +6,7 @@
       rgba(0, 0, 0, 0.5) 100%
     ),
     url(../../images/bg.svg);
-  height: 100vh;
+  min-height: 100vh;
   margin: 0 auto;
   padding: 1px 0 0;
   box-sizing: border-box;
@@ -23,8 +23,6 @@
   margin: 36px 0 0 0;
 }
 .app__wrapper {
-  margin-top: 50vh;
-  transform: translateY(-50%);
 }
 .app__treat-box {
   margin: 24px 0 0 0;
